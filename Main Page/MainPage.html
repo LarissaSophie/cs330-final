@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Forecast Foreseer</title>
+        <link href="MainPageStyles.css" rel="stylesheet">
+        <link rel="icon" href="../images/favicon.png">
+        <script src="MainPage.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtitR8lFqlvEyzDrbI01yu5My5OLtF0bE&libraries=places" async defer></script>
+    </head>
+    <body>
+        <!-- Header Ribbon -->
+        <div id="HeaderRibbon">
+            <!-- Displays website name-->
+            <h3 id="SiteName">FORECAST FORESEER</h3>
+            <h3 class="OffsetUser"><a href="../Sign In/SignIn.html" target="_self" id="userAccount"><img src="../images/user.png" alt="User Icon" id="UserIcon"></a></h3>
+        </div>
+        <!-- Body block for Forecast Foreseer main/home page-->
+        <div id="WebAppBody">
+
+            <!-- Header block Forecast Foreseer main/home page-->
+            <div id="Header">
+                <!-- Displays user location -->
+                <h1 id="LocationHeader" contenteditable="false">Fetching location...</h1>
+            </div>
+
+            <!-- Displays current weather/temperature-->
+            <div id="CurrentWeather">
+
+                <!-- Displays temperature-->
+                <div id="TempBox">
+                    <p>Temperature:</p>
+                    <span id="Temperature">Temperature</span>
+                </div>
+
+                <!-- Displays chance of precipitation-->
+                <div>
+                    <p>Precipitation Chance:</p>
+                    <p id="PrecipitationChance">Precipitation Chance</p>
+                </div>
+
+                <!-- Displays humidity-->
+                <div>
+                    <p>Humidity:</p>
+                    <p id="Humidity">Humidity</p>
+                </div>
+
+                <!-- Displays UV Index-->
+                <div>
+                    <p>UV Index:</p>
+                    <p id="UVIndex">UV Index</p>
+                </div>
+
+                <!-- Displays wind speed-->
+                <div>
+                    <p>Wind Speed:</p>
+                    <p id="Wind">Wind</p>
+                </div>
+                <!-- Displays weather alerts-->
+                <div id="WeatherAlertsBox">
+                    <p>Weather:</p>
+                    <p id="WeatherAlerts">Weather Alerts</p>
+                </div>
+            </div>
+
+            <div id="columns">
+                
+                <div id="middleColumn">
+
+                    <!-- Displays satellite map-->
+                    <div id="SatelliteMap">
+                        <iframe 
+                            title="Google Map"
+                            id="mapFrame" 
+                            width="100%" 
+                            height="100%"
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div id="rightColumn">
+                    <!-- Displays suggestions based on weather-->
+                    <div id="Suggestions">
+                        <h2>Weather Suggestions</h2>
+                        <!-- Embed the Suggestions iframe here -->
+                        <iframe title="Suggestions" src="Suggestions/Suggestions.html" width="100%" height="400"></iframe>
+                    </div>
+
+                    <!-- Displays preview of calendar-->
+                    <div id="CalendarBox">
+
+                        <!-- Link to user calendar-->
+                        <a href="../Calendar/Calendar.html" target="_self" id="CalendarLink">Calendar</a>
+                        <iframe  title="Upcoming Events" src="../Calendar/Upcoming Events/UpcomingEvents.html" width="100%" height="90%" style="border:none;"></iframe>
+
+                        <script src="../Calendar/Upcoming Events/UpcomingEvents.js"></script>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

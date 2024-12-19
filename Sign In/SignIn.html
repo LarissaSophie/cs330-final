@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Forecast Foreseer Create Account</title>
+        <link href="SignInStyles.css" rel="stylesheet" />
+        <link rel="icon" href="../images/favicon.png">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous"></script>
+        <script src="../Sign In/SignIn.js"></script>
+    </head>
+    <body>
+        <form action="../Main Page/MainPage.html" method="POST" id="signInForm">
+            <div id="container">
+                <div id="heading">Sign In</div>
+                <div>
+                    <label for="username" id="usernameLabel">Username:</label>
+                    <input type="text" name="username" id="username" required autocomplete="1"/>
+                </div>
+                <div>
+                    <label for="password" id="passwordLabel">Password:</label>
+                    <input type="password" name="password" id="password" />
+                </div>
+                <div>
+                    <label for="showPass" id="showPassLabel">Show Password:</label>
+                    <input type="checkbox" name="showPass" id="showPass"/>
+                </div>
+                <div>
+                    <input type="submit" id="submitButton"/>
+                </div>
+                <div id="forgotUsername">
+                    <a href="../Sign In/ForgotInfo/ForgotUser.html" type="_self">Forgot Username</a>
+                </div>
+                <div id="forgotPassword">
+                    <a href="../Sign In/ForgotInfo/ForgotPass.html" type="_self">Forgot Password</a>
+                </div>
+                <div id="createAccount">
+                    <a>New user?</a>
+                    <a href="../CreateAccount/CreateAccount.html" type="_self" id="createAccountLink">Create Account</a>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

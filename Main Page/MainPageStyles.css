@@ -1,0 +1,144 @@
+body {
+    background: linear-gradient(rgb(44, 71, 145), rgb(70, 214, 250), rgb(212, 223, 235));
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(49, 49, 59);
+    margin: 0;
+    padding: 0;
+}
+
+#HeaderRibbon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh; /* Header height */
+    background-color: rgb(50, 50, 50);
+    top: 0; /* Aligns the header to the top of the page */
+    left: 0;
+}
+
+#SiteName {
+    text-align: left;
+    color: white;
+    margin-left: 16px;
+    font-size: 24px;
+}
+
+#UserIcon {
+    height: 4vh;
+    width: auto;
+    margin-right: 16px;
+}
+
+#Header {
+    margin: 0px 8px;
+    border-radius: 4px;
+    background-color: white;
+    height: 5vh;
+    margin-top: 8px;
+    padding: 20px;
+}
+
+
+#LocationHeader {
+    text-align: center;
+    min-width: 25%;
+    position: relative;
+    top: -2.5vh;
+}
+
+#suggestionBox div {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+#suggestionBox div:hover {
+    background-color: #f0f0f0;
+}
+
+
+#WebAppBody {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    height: 90vh;
+}
+
+#CurrentWeather {
+    display: flex;
+    padding: 4px;
+    margin: 4px;
+    height: 15%;
+    border-radius: 4px;
+    gap: 8px;
+}
+
+#CurrentWeather div {
+    text-align: center;
+    background-color: white;
+    border-radius: 4px;
+    width: 20%;
+}
+
+
+#columns {
+    display: flex;
+    flex-direction: row;
+    height: 70%;
+    gap: 8px;
+    margin: 0px 4px;
+    padding: 0px 4px;
+}
+
+#leftColumn { /* pre -> wind boxes*/
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    min-height: 100%;
+    gap: 8px;
+}
+
+#leftColumn div { /* pre -> wind boxes*/
+    text-align: center;
+    border-radius: 4px;
+    height: 25%;
+    background-color: white;
+}
+
+#middleColumn { /* map box*/
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    gap: 8px;
+}
+
+#middleColumn div { /* map */
+    text-align: center;
+    border-radius: 4px;
+    height: 100%;
+    background-color: white;
+}
+
+#rightColumn { /* how far over suggestions/calendar go over*/
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 8px;
+}
+
+#rightColumn div {
+    text-align: center;
+    border-radius: 4px;
+    background-color: white;
+}
+
+#Suggestions {
+    height: 25%;
+}
+
+#CalendarBox {
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+}
